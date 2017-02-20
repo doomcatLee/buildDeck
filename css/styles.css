@@ -1,0 +1,14 @@
+.container{
+  text-align: center;
+  padding: 20px 20px;
+  font-size: 100px;
+}
+
+#input1{
+  width: 600px;
+  font-size: 30px;
+}
+
+#output{
+  text-align: center;
+}
