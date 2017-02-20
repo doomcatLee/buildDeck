@@ -1,14 +1,12 @@
+
+var suits = ["clubs","hearts", "diamonds", "kings"];
+var ranks = ["ace", "jack", "queen", "king", "2", "3", "4", "5", "6","7", "8", "9", "10"];
+
+
 $(function(){
-  $("#input").submit(function(){
-    event.preventDefault();
-    var sentence = $("#input1").val();
-    var outputArray = [];
-    sentence.split(" ").forEach(function(each){
-      if (each.length >= 3){
-        outputArray.push(each);
-      }
+  var output = suits.forEach(function(suit){
+    ranks.forEach(function(rank){
+      $("#output").append("<li>" + rank + " of " + suit + "</li>");
     });
-    var outputString = outputArray.reverse().join(" ");
-    $("h1").append(outputString);
   });
 });
